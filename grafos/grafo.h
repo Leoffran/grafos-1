@@ -28,9 +28,6 @@ class Grafo {
     // vetor que armazena o rótulo de cada vertice
     vector<string> labels;
 
-    // vetor para cada vértice que contém os pares (vertice, "distância")
-    vector<vector<pair<int,double>>> adjacentes;
-
     // matriz pra armazenar as distancias entre os vertices
     // (vertice1, vertice2, distancia)
     vector<vector<double>> matriz; 
@@ -38,6 +35,9 @@ class Grafo {
     // precisa desses 2 armazenamentos diferentes porque o professor pede pra otimizar quando puder
 
 public:
+
+    // vetor para cada vértice que contém os pares (vertice, "distância")
+    vector<vector<pair<int,double>>> adjacentes;
 
     // lê o arquivo e inicializa tudo
     Grafo(string arquivo) {
